@@ -1,0 +1,12 @@
+---
+- name: Actualiza los repos
+  apt:
+    update_cache: yes
+
+- name: Muestra mensaje post-tarea
+  debug:
+    msg:
+      - 'El equipo fue actualizado con exito'
+      - 'cosas por hacer:'
+      - '- crear dashboard para monitoreo de hardware del equipo'
+    
